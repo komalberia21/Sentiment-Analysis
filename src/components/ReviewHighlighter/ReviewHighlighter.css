@@ -1,0 +1,57 @@
+.reviews-system{
+    display: flex;
+   font-size:1.5rem;
+    padding: 1.5em;
+    margin:1.5em;
+    gap:20px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap:17px;
+}
+
+
+.first-part{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:20px;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+.second-part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+.third-part{
+    display: flex;
+    align-items: start;
+    text-align: left;
+    
+    font-weight: 500;
+}
+.name{
+    color: black;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.star{
+    color:orange;
+}
+.date{
+    font-size: 1.1rem;
+    color: grey;
+}
+.image-part img{
+    height:50px;
+    width:50px;
+}

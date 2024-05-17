@@ -1,0 +1,42 @@
+
+import './Content.css';
+
+const sentimentColors = {
+  Positive: '#D9F2DD',
+  Negative: '#F2DBD9',
+  Mixed: '#E8BD6D3D',
+  Neutral: '#EAF09B6B'
+};
+
+const Content = ({ analytics, content }) => {
+  console.log(analytics, content, "Content");
+
+  return (
+    <div className="content-part">
+      <div className="content">
+        {content}
+      </div>
+      <div className="analytics">
+        {analytics.map((item, index) => (
+          <div key={index} className="category">
+            {item.sentences.map((sentence, sIndex) => (
+              <p
+                key={sIndex}
+                style={{
+                  backgroundColor: sentimentColors[item.sentiment],
+                  padding: '5px',
+                  borderRadius: '5px',
+                  marginBottom: '10px'
+                }}
+              >
+                {sentence}
+              </p>
+            ))}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export default Content;

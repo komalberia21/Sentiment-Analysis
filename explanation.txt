@@ -1,0 +1,14 @@
+1.In app.jsx i am mapping over json data and sending one object to ReviewHeighlight component 
+
+2.In ReviewHeighlight component i am displaying individual reviews by user
+
+3.Here i am using Content component to display content by highlighting the text and displaying tooltip
+
+4. to start this project change to current directory and use command npm install to install all the dependencies
+
+5. use command npm run dev to start the project 
+
+
+change to current directory
+npm install
+npm run dev 
